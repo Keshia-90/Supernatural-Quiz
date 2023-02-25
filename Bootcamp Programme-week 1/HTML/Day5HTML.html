@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- select option creates dropdown selection box, 1st option is pre-defined on load screen -->
+    <h2>Select Option</h2>
+    <label for="films">Choose a film franchise &#127902;&#65039;</label>
+    <select name="films" id="films" style="background-color:aquamarine">
+    <option value="default">Select a Franchise</option>
+<option value="saw" style="background-color:rgba(71, 74, 73, 0.769)">Saw</option>
+<option value="john wick" style="background-color:rgba(71, 74, 73, 0.769)">John Wick</option>
+<option value="conjuring" style="background-color:rgba(71, 74, 73, 0.769)">Conjuring</option>
+<option value="insidious" style="background-color:rgba(71, 74, 73, 0.769)">Insidious</option>
+<option value="wrong turn" style="background-color:rgba(71, 74, 73, 0.769)">Wrong Turn</option>
+</select>
+<hr>
+
+<!-- radio buttons -->
+<h2>Radio Button</h2>
+<p>Select your favourite animal from the options below:</p>
+<form>
+    <input type="radio" id="lion" name="animal" value="lion">
+    <label for="lion">&#129409;</label>
+    <br>
+    <input type="radio" id="dog" name="animal" value="dog">
+    <label for="dog">&#128021;</label>
+    <br>
+    <input type="radio" id="horse" name="animal" value="horse">
+    <label for="horse">&#128014;</label>
+</form>
+
+<!-- CHECKBOX-allows user to select multiple or noo options -->
+<h2>Checkbox</h2>
+<p>What Activities Do You Prefer? Tick &#10004;&#65039; All That Apply</p>
+<form>
+    <input type="checkbox" id="football" name="sport" value="football">
+    <label for="football">Football &#9917;</label>
+    <br>
+    <input type="checkbox" id="" name="sport" value="baskettball">
+    <label for="basketball">Basketball &#127936;</label>
+    <br>
+    <input type="checkbox" id="rugby" name="sport" value="rugby">
+    <label for="rugby">Rugby &#127945;</label>
+    <br>
+    <input type="checkbox" id="tennis" name="sport" value="tennis">
+    <label for="tennis">Tennis &#127934;</label>
+    <input type="submit" value="submit">
+</form>
+
+<!-- Data List -->
+<label for="sides" style="background-color:aqua">Choose your side options</label>
+<input list="sideop" name="sides" id="sides" placeholder="Side Orders">
+<datalist id="sideop">
+    <option value="fries">Option 1</option>
+    <option value="Onion Rings">Option 2</option>
+    <option value="Chicken Wings">Option 3</option>
+    <option value="Salad">Option 4</option>
+</datalist>
+
+<!-- Field Set -->
+<h2>Fieldset and Legend</h2>
+<form style="margin: 100px; width: 100px">
+<fieldset>
+    <legend>Profile:</legend>
+    <label for="first">First Name:</label>
+    <input type="text" id="first" name="first">
+    <br>
+    <label for="last">Last Name:</label>
+    <input type="text" id="last" name="last">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <br>
+</fieldset>
+
+<fieldset>
+    <legend>Card Details:</legend>
+    <label for="cardname">Card Name:</label>
+    <input type="text" id="cardname" name="cardname" required>
+</fieldset>
+<input type="submit" value="Submit">
+</form>
+
+<form style="margin: 10px; width: 300px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" >
+    <fieldset style="border-style: double; border-color:red; border-width: 10px; background-color: rgb(0, 0, 0);">
+        <legend style="     color: rgb(255, 0, 0);
+        text-shadow:
+        -3px -3px 0 rgb(255, 0, 0),
+        3px -3px 0 rgb(255, 0, 0),
+        -3px 3px 0 rgb(255, 0, 0),
+        3px 3px 0 rgb(255, 0, 0); font-size: 50px; color:gold"><em>Order &#127869;&#65039;</em></legend>
+        <h2 style="color:gold">Jacket Potato  &#129364;</h2>
+        <label for="fillings" style="color: silver;">Please Select Your Filling:</label>
+<input list="jpfilling" name="fillings" id="fillings" placeholder="Fillings" style="background-color: rgba(255, 0, 0, 0.449);" >
+<datalist id="jpfilling">
+    <option value="Beans">Option 1</option>
+    <option value="Cheese">Option 2</option>
+    <option value="Tuna">Option 3</option>
+    <option value="Salad">Option 4</option>
+    <option value="Chilli Con Carne">Option 5</option>
+</datalist>
+<h2 style="color:gold">Sandwiches &#129386;</h2>
+<p style="color: silver;">Please Select Your Bread Preference:</p>
+<input type="radio" id="wholemeal" name="bread" value="wholemeal">
+<label for="wholemeal" style="color: goldenrod;">Wholemeal</label>
+<br>
+<input type="radio" id="white" name="bread" value="white">
+<label for="white" style="color: goldenrod;">White</label>
+<br>
+<h3 style="color:gold">Sandwich Fillings</h3>
+<label for="sfillings" style="color:  silver;">Please Select Your Filling:</label>
+<input list="swfilling" name="sfillings" id="sfillings" placeholder="Fillings" style="background-color: rgba(255, 0, 0, 0.449);">
+<datalist id="swfilling">
+    <option value="Ham">Option 1</option>
+    <option value="Cheese">Option 2</option>
+    <option value="Tuna Mayo">Option 3</option>
+    <option value="BLT">Option 4</option>
+</datalist>
+<br>
+<h2 style="color:gold">Drinks</h2>
+<h3 style="color:gold">Hot Drinks &#9749;</h3>
+<p style="color:  silver;">Please Select Your Hot Drink:</p>
+<input list="hotdrink" name="hotdrinks" id="hotdrinks" placeholder="Hot Drinks" style="background-color: rgba(255, 0, 0, 0.449);">
+<datalist id="hotdrink">
+    <option value="Tea">Option 1</option>
+    <option value="Coffee">Option 2</option>
+    <option value="Latte">Option 3</option>
+    <option value="Hot Chocolate">Option 4</option>
+    <option value="Cappuccino">Option 5</option>
+    </datalist>
+    <h4 style="color:  silver;">*Do You Require Milk?</h4>
+    <input type="radio" id="yes" name="Milk" value="yes">
+    <label for="yes" style="color: goldenrod;">Yes</label>
+    <br>
+    <input type="radio" id="no" name="Milk" value="no">
+    <label for="no" style="color: goldenrod;">No</label>
+    <br>
+    <input type="radio" id="soya" name="Milk" value="soya">
+    <label for="soya" style="color: goldenrod;">Soya</label>
+    <br>
+    <input type="radio" id="almond" name="Milk" value="almond">
+    <label for="almond" style="color: goldenrod;">Almond</label>
+    <h3 style="color:gold">Cold Drinks &#129475;</h3>
+    <label for="cdrinks" style="color: silver;">Please Select Your Cold Drink:</label>
+    <input list="clddrink" name="cdrinks" id="cdrinks" placeholder="Cold Drinks" style="background-color: rgba(255, 0, 0, 0.449);">
+    <datalist id="clddrink">
+        <option value="Water">Opition 1</option>
+        <option value="Juice">Option 2</option>
+        <option value="Fizzy Pop">Option 3</option>
+    </datalist>
+    <br>
+    <br>
+    <input type="submit" value="Submit" style="background-color: darkgreen; border-radius: 10px;">
+    <input type="reset" value="Reset" style="background-color:darkred; border-radius: 10px;">
+    </fieldset>
+
+
+
+    </fieldset>
+
+</form>
+
+
+</body>
+</html>
