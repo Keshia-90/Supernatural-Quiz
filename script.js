@@ -200,6 +200,7 @@ document.querySelector("#end").addEventListener("click", function(){
 // end.addEventListener("click",endQuiz);
 function endQuiz(){
     end.style.display = "block";
+    quiz.style.display = "none"; 
     }
 
 
